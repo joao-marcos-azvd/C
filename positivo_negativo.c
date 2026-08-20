@@ -5,15 +5,18 @@
 
 int main()
 {
-    int num;
+    float num;
     printf("--- Positivo ou negativo --- \n");
     printf("Digite um valor: ");
-    scanf("%d", &num);
-    if (num >= 0) {
-        printf("O valor %d é POSITIVO!", num);
+    scanf("%f", &num);
+    if (num > 0) {
+        printf("O valor %.2f é POSITIVO!", num);
+    }
+    else if (num == 0) {
+        printf("O valor é %.2f!", num);
     }
     else {
-        printf("O valor %d é NEGATIVO!", num);
+        printf("O valor %.2f é NEGATIVO!", num);
     }
 
     return 0;
