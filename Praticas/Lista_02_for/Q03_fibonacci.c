@@ -13,15 +13,16 @@ int main(){
     scanf("%d", &quant_termos);
     
     // Definindo as variáveis que serão usadas para calcular a Sequencia
-    int y = 1, y_ant = 0;
+    int termo1 = 0, termo2 = 1, proximo_termo;
     
-    // Aqui é para mostrar os dois primeiros termos ( 0, 1 ), já que não estamos tra
-    printf("%d, %d, ", y_ant, y);
+    // // Aqui é para mostrar os dois primeiros termos ( 0, 1 ), já que não estamos tra
+    // printf("%d, %d, ", y_ant, y);
     
     for (int n=0; n<= quant_termos; n++){
-        y += y_ant;
-        y_ant = y;
-        printf("%d, ", y);
+        proximo_termo = termo1 + termo2;
+        printf("%d, ", termo1);
+        termo1 = termo2;
+        termo2 = proximo_termo;
     }
     return 0;
 }
