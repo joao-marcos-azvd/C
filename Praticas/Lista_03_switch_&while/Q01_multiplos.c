@@ -20,7 +20,7 @@ int main() {
         
         // O switch vai servir para indicar qual ação sera executada ao depender da opção escolhida
         switch (opcao) {
-            case 1: // Se a opação for 1
+            case 1: // Se a opação for 1 (Multiplo de 2)
                 printf("Os multiplos de 2 no intervalo %d são: ", intervalo_n);
                 int multiplo = 2;
                 for (int t=1; (multiplo * t) <= intervalo_n; t++) {
@@ -30,7 +30,7 @@ int main() {
                 printf("\nQuantidade de multiplos: %d\n", contador);
                 break;
             
-            case 2: // Se a opação for 2
+            case 2: // Se a opação for 2  (Multiplo de 3)
                 printf("Os multiplos de 3 no intervalo %d são: ", intervalo_n);
                 multiplo = 3;
                 for (int t=1; (multiplo * t) <= intervalo_n; t++){
@@ -40,7 +40,7 @@ int main() {
                 printf("\nQuantidade de multiplos: %d\n", contador);
                 break;
                 
-            case 3: // Se a opação for 3
+            case 3: // Se a opação for 3  (Multiplo de 5)
                 printf("Os multiplos de 5 no intervalo %d são: ", intervalo_n);
                 multiplo = 5;
                 for (int t=1; (multiplo * t) <= intervalo_n; t++){
@@ -50,7 +50,7 @@ int main() {
                 printf("\nQuantidade de multiplos: %d\n", contador);
                 break;
               
-            // Essa opção aqui é a que faz o código continuar no while
+            // Essa opção aqui é a que faz o código continuar no while até escolher uma opção válida
             default: // Se a opção for diferente de todas as anteriores
                 printf("Opção inválida!\n");
                 break;
